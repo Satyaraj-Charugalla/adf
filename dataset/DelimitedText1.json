@@ -1,0 +1,68 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Fortune 500 Companies US.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Rank",
+				"type": "String"
+			},
+			{
+				"name": "Company Name",
+				"type": "String"
+			},
+			{
+				"name": "Number of Employees",
+				"type": "String"
+			},
+			{
+				"name": "Previous Rank",
+				"type": "String"
+			},
+			{
+				"name": "Revenues",
+				"type": "String"
+			},
+			{
+				"name": "Revenue Change",
+				"type": "String"
+			},
+			{
+				"name": "Profits",
+				"type": "String"
+			},
+			{
+				"name": "Profit Change",
+				"type": "String"
+			},
+			{
+				"name": "Assets",
+				"type": "String"
+			},
+			{
+				"name": "Market Value",
+				"type": "String"
+			},
+			{
+				"name": "Prop_10",
+				"type": "String"
+			}
+		]
+	}
+}
