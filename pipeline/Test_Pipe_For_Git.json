@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "Test_Pipe_For_Git",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy Activity",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
