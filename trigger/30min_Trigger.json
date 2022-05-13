@@ -27,7 +27,7 @@
 				"schedule": {
 					"minutes": [
 						0,
-						30
+						10
 					],
 					"hours": [
 						15,
