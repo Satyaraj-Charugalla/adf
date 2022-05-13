@@ -1,0 +1,38 @@
+{
+	"name": "30min_Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Test_Pipe_For_Git",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Week",
+				"interval": 1,
+				"startTime": "2022-05-13T09:24:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"minutes": [
+						0,
+						30
+					],
+					"hours": [
+						14,
+						15
+					],
+					"weekDays": [
+						"Friday",
+						"Saturday"
+					]
+				}
+			}
+		}
+	}
+}
