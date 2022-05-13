@@ -9,6 +9,12 @@
 					"referenceName": "Test_Pipe_For_Git",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "30_min_trigger",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
@@ -24,8 +30,8 @@
 						30
 					],
 					"hours": [
-						14,
-						15
+						15,
+						16
 					],
 					"weekDays": [
 						"Friday",
