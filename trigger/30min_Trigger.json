@@ -22,7 +22,7 @@
 			"recurrence": {
 				"frequency": "Week",
 				"interval": 1,
-				"startTime": "2022-05-13T09:24:00",
+				"startTime": "2022-05-13T15:00:00",
 				"timeZone": "India Standard Time",
 				"schedule": {
 					"minutes": [
