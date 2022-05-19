@@ -356,58 +356,6 @@
 				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]",
 				"[concat(variables('factoryId'), '/datasets/DelimitedText2')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/30min_Trigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "Test_Pipe_For_Git",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					},
-					{
-						"pipelineReference": {
-							"referenceName": "30_min_trigger",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "ScheduleTrigger",
-				"typeProperties": {
-					"recurrence": {
-						"frequency": "Week",
-						"interval": 1,
-						"startTime": "2022-05-13T15:00:00",
-						"timeZone": "India Standard Time",
-						"schedule": {
-							"minutes": [
-								0,
-								18
-							],
-							"hours": [
-								15,
-								16
-							],
-							"weekDays": [
-								"Friday",
-								"Saturday"
-							]
-						}
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/Test_Pipe_For_Git')]",
-				"[concat(variables('factoryId'), '/pipelines/30_min_trigger')]"
-			]
 		}
 	]
 }
